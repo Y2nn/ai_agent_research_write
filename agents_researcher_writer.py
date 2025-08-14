@@ -26,7 +26,7 @@ llm = ChatCohere(
 
 # crewai crewai_tools
 if __name__ == '__main__':
-    """Creating Agents"""
+    """ Creating Agents """
     # Note: The benefit of using multiple strings :
     #
     # varname = "line 1 of text"
@@ -96,7 +96,7 @@ if __name__ == '__main__':
         verbose=True
     )
 
-    """Creating Tasks"""
+    """ Creating Tasks """
 
     # Task: Plan
     plan = Task(
@@ -147,22 +147,22 @@ if __name__ == '__main__':
         agent=editor
     )
 
-    """Creating the Crew"""
+    """ Creating the Crew """
     # Create your crew of Agents
     # Pass the tasks to be performed by those agents.
     # Note: For this simple example,
     # the tasks will be performed sequentially (i.e they are dependent on each other),
     # so the order of the task in the list matters.
-    # verbose=2 allows you to see all the logs of the execution.
+    # verbose=True allows you to see all the logs of the execution.
 
     crew = Crew(
         agents=[planner, writer, editor],
         tasks=[plan, write, edit],
-        verbose=True
+        verbose=True,
     )
 
-    """Running the Crew"""
-    # Note: LLMs can provide different outputs for they same input,
+    """ Running the Crew """
+    # Note: LLMs can provide different outputs for they same input.
 
     result = crew.kickoff(
         inputs={"topic": "Artificial Intelligence"}
