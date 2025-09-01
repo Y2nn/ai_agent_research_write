@@ -1,10 +1,15 @@
 # CrewAI Multiple AI Agent Systems
 
-### Goal 1
-Here, our goal is to create AI Agents to research and write an article given a topic.
+### Purposes
+- Here, our goal is to create AI Agents to research and write an article.
 
-### Goal 2
-Here, our goal is to create AI Agents for a Customer Support Automation given a topic.
+- Here, our goal is to create AI Agents for a customer support automation.
+
+- Here, our goal is to create AI Agents to automate the planning of an event.
+
+- Here, our goal is to create AI Agents to perform financial analysis.
+
+- Here, our goal is to create AI Agents to build a CV based on a job offer.
 
 ### Main Features
 - Create Agents
